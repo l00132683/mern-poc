@@ -9,7 +9,7 @@ const Flock = props => (
         <td>{props.flock.tagNo}</td>
         <td>{props.flock.group}</td>
         <td>
-            <Link to={"/edit/"+props.flock._id}>edit</Link> | <a href="#" onClick={() => {props.deleteFlock(props.flock._id)}}>delete</a>
+            <Link to={"/edit/"+props.flock._id}>edit</Link> | <button className="btn btn-link" onClick={() => {props.deleteFlock(props.flock._id)}}>delete</button>
         </td>
     </tr>
 )
